@@ -1,0 +1,65 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+section, header
+	position: relative
+	background-size: cover!important
+	background-poistion: center
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+
+
+.fc-toolbar
+	display: none!important
+
+.fc-day-number
+	float: none!important
+	font-size: 70px
+	texy-laign: center
+
+a
+	color: #cfcfcf
+
+a:hover
+	color: #ffffff
+
+.support
+	background-color: #222222
+
+.footer-menu 
+	background-color: #0f0f0f
+
+@import "media" 

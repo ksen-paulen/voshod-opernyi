@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>Урал опера балет</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href='fc/fullcalendar.css' rel='stylesheet' />
+    <script src='fc/lib/moment.min.js'></script>
+    <script src='fc/lib/jquery.min.js'></script>
+    <script src='fc/fullcalendar.min.js'></script>
+    <script>
+    $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+
+            editable: false,
+            eventLimit: true,
+            events: [{
+                    title: 'All Day Event',
+                    start: '2018-03-01'
+                },
+                {
+                    title: 'Long Event',
+                    start: '2018-03-07',
+                    end: '2018-03-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2018-03-09T16:00:00'
+                }
+            ]
+        });
+
+    });
+    </script>
+    <style>
+    #calendar {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <header style="background-image: url(img/head_bcg.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col logo">
+                    <img src="img/logo/logo.svg" alt="">
+                </div>
+                <div class="col"><a href="">афиша</a></div>
+                <div class="col"><a href="">опера</a></div>
+                <div class="col"><a href="">балет</a></div>
+                <div class="col"><a href="">медиа</a></div>
+                <div class="col"><a href="">о театре</p></div>
+      <div class="col"><a href="">проекты</a></div>
+                <div class="col"><a href="#">войти </a><a href="">en </a><a href="#">*-*</a></div>
+            </div>
+        </div>
+    </header>
+    <div id='calendar' style="background-image: url(img/snow_bcg.jpg);"></div>
+    <div id="footer">
+        <div class="support">
+            <div class="row">
+                <div class="col"><a href="#" target="">Поддержать театр</a></div>
+                <div class="col"><a href="#" target="">Стать спонсором</a></div>
+                <div class="col"><a href="#" target="">Сделать пожертвование</a></div>
+                <div class="col"><a href="#" target="">Реклама в театре</a></div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col">
+                    <h4><a href="">Проекты</a></h4>
+                    <br>
+                    <a href="">Лекции</a>
+                    <br>
+                    <a href="">Экскурсии</a></div>
+                <div class="col"><div class="col">
+                    <h4><a href="">Медиа</a></h4>
+                    <br>
+                    <a href="">Театральная газета</a>
+                    <br>
+                    <a href="">Аккредитация</a></div></div>
+                <div class="col"><h4><a href="">Афиша</a></h4>
+                    <br>
+                    <a href="">Гастроли</a>
+                    <br>
+                    <a href="">Репертуар</a></div>
+                <div class="col"><h4><a href="">Опера</a></h4></div>
+                <div class="col"><h4><a href="">Балет</a></h4></div>
+                <div class="col"><h4><a href="">Екатеринбург, пр.Ленина, 46а</a></h4><br>
+                  <a href="">google maps</a></div>
+                </div>
+            </div>
+        </div>
+        <script src='fc/lib/jquery.min.js'></script>
+        <script src="js/scripts.min.js"></script>
+        <script src='fc/lib/moment.min.js'></script>
+        <script src='fc/fullcalendar.min.js'></script>
+        <script src='fc/locale/ru.js'></script>
+</body>
+
+</html>
