@@ -13821,12 +13821,12 @@ var TimeGridEventRenderer = /** @class */ (function (_super) {
                 '<div class="fc-time"' +
                     ' data-start="' + util_1.htmlEscape(startTimeText) + '"' +
                     ' data-full="' + util_1.htmlEscape(fullTimeText) + '"' +
-                    '>' +
+                    '>' + 
                     '<span>' + util_1.htmlEscape(timeText) + '</span>' +
                     '</div>' :
                 '') +
             (eventDef.title ?
-                '<div class="fc-title">' +
+               '<br>' + '<div class="fc-title">' +
                     util_1.htmlEscape(eventDef.title) +
                     '</div>' :
                 '') +
@@ -14465,7 +14465,7 @@ var DayGridEventRenderer = /** @class */ (function (_super) {
         if (seg.isStart) {
             timeText = this.getTimeText(seg.footprint);
             if (timeText) {
-                timeHtml = '<span class="fc-time">' + util_1.htmlEscape(timeText) + '</span>';
+                timeHtml = '<span class="fc-time">' + util_1.htmlEscape(timeText) + '</span><br>';
             }
         }
         titleHtml =
@@ -14889,7 +14889,7 @@ Bootstrap4Theme.prototype.baseIconClass = 'fa';
 Bootstrap4Theme.prototype.iconClasses = {
     close: 'fa-times',
     prev: 'fa-chevron-left',
-    next: 'fa-chevron-right',
+    next: 'fa-chevron-righ t',
     prevYear: 'fa-angle-double-left',
     nextYear: 'fa-angle-double-right'
 };

@@ -14,6 +14,7 @@ html, body
 
 body
 	font-size: 16px
+	color: #ffffff
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -27,10 +28,29 @@ body
 			&:required:valid
 				border-color: green
 
-section, header
+.text-uppercase 
+	text-transform: uppercase
+
+.col-sm-2
+	padding-right: 0px!important
+.container
+	max-width: 100%
+
+header
 	position: relative
 	background-size: cover!important
-	background-poistion: center
+	background-position: center
+	padding-top: 25px
+	max-height: 700px
+	
+.nav
+	z-index: 100
+
+#calendar
+	position: relative
+	background-size: cover!important
+	background-position: center
+
 
 .img-responsive
 	display: block
@@ -42,24 +62,75 @@ section, header
 
 
 
+
 .fc-toolbar
 	display: none!important
 
 .fc-day-number
 	float: none!important
 	font-size: 70px
-	texy-laign: center
+	text-align: center
 
 a
 	color: #cfcfcf
 
 a:hover
 	color: #ffffff
+	text-decoration: none
 
 .support
 	background-color: #222222
+	padding: 30px
+	text-align: center
 
 .footer-menu 
 	background-color: #0f0f0f
+	padding: 50px
+
+.header-flex
+	display: flex
+	max-height: 700px
+	position: releative
+	top: 0
+
+.flex-center
+	margin: auto
+	width: 100%
+
+.header-composition 
+	text-align: center
+	margin: auto
+.composition-right 
+	position: relative
+	bottom: 881px
+	left: 500px
+.day-day 
+	font-size: 600px
+	position: relative
+	bottom: 242px
+	color: #e37e5b
+
+.date-zindex
+	position: relative
+	z-index: 100
+	right: 15px
+	
+
+.program-name
+	position: relative
+	font-size: 100px
+	line-height: 1
+	text-align: left
+.period-tickets
+	position: relative
+	right: 9px
+.day-week
+	color: #ffa585	
+
+.footer-partners
+	background-color: #000000
+	padding: 50px
+.first-row
+	padding-bottom: 50px
 
 @import "media" 

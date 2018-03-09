@@ -293,14 +293,19 @@ temporary rendered events).
 .fc-row .fc-helper-skeleton {
   z-index: 5; }
 
+
+
 .fc .fc-row .fc-content-skeleton table,
 .fc .fc-row .fc-content-skeleton td,
 .fc .fc-row .fc-helper-skeleton td {
   /* see-through to the background below */
   /* extra precedence to prevent theme-provided backgrounds */
   background: none;
+  text-align: center;
   /* in case <td>s are globally styled */
   border-color: transparent; }
+
+
 
 .fc-row .fc-content-skeleton td,
 .fc-row .fc-helper-skeleton td {
@@ -849,9 +854,11 @@ NOTE: use percentage font sizes or else old IE chokes
 .fc-view-container *,
 .fc-view-container *:before,
 .fc-view-container *:after {
+  color: #8c8786;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  bottom: 10px; }
 
 .fc-view,
 .fc-view > table {
